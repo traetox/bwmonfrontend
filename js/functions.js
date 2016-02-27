@@ -259,7 +259,7 @@ function buildDayBarGraphs(data, downselect) {
 			upstream.push(s.BytesUp);
 			downstream.push(s.BytesDown);
 			var d = new Date(s.Ts);
-			labels.push(d.getDay());
+			labels.push(d.getDate());
 		});
 		
 		buildNewBarGraph(name, title, $('#days'), labels, upstream, downstream);
